@@ -8,13 +8,17 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-lg p-5 pt-0 pb-0">
+        <div class="container-lg">
             <a href="index.html" class="navbar-brand">
-                <div class="text-secondary fw-bold">
+                <span class="text-secondary fw-bold">
                     John Doe
-                </div>
+                </span>
             </a>
-            <div class="navbar-collapse justify-content-end align-center">
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#Portfolio" class="nav-link">Portfolio</a>
@@ -33,25 +37,25 @@
         </div>
     </nav>
     <section id="headline">
-        <div class="container-fill bg-info">
+        <div class="container-fluid bg-info">
             <div class="row">
                 <div class="col-lg-6 d-flex align-items-center d-sm.flex-row-reverse">
                     <div class="col-lg-2 ms-4">
-                        <ul class="nav flex-lg-column">
+                        <ul class="nav flex-column gap-3">
                             <li class="nav-item">
-                                <a href="#"><img src="node_modules/bootstrap-icons/icons/github.svg" alt="github"></a>
+                                <a href="#"><img src="img/GitHub.png" alt="github"></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="linkedin"></a>
+                                <a href="#"><img src="img/Linkedin.png" alt="linkedin"></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#"><img src="node_modules/" alt="angelist"></a>
+                                <a href="#"><img src="img/Angelist.png" alt="angelist"></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt="twitter"></a>
+                                <a href="#"><img src="img/Twitter.png" alt="twitter"></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#"><img src="node_modules/bootstrap-icons/icons/medium.svg" alt="medium"></a>
+                                <a href="#"><img src="img/Medium.png" alt="medium"></a>
                             </li>
                         </ul>
                     </div>
@@ -70,39 +74,39 @@
         </div>
     </section>
     <section id="About">
-        <div class="container-lg d-flex-column justify-content-center">
-            <div class="title d-flex-column justify-content-center"> 
-                <h1 class="title">My Recent Works </h1>
-                <hr/>
+        <div class="container mb-5 mt-5">
+            <div class="d-lg-flex justify-content-center"> 
+                <h1>My Recent Works </h1>
+                <hr>
             </div>
-            <div class="container-fill d-flex justify-content-center g-3">
-                <img src="img/FeatureImage.png" alt="featured-image" class="me-5">
-                <div class="container-fill">
+            <div class="d-lg-flex justify-content-center">
+                <img src="img/FeatureImage.png" alt="featured-image" width="100%" class="img-fluid">
+                <div class="container">
                     <h1 class="title">Multi-Post Stories</h1>
                     <p>A daily selection of privately personalized reads;
                          no accounts or sign-ups required. has been the
                           industry's standard dummy text ever since the 1500s, 
                           when an unknown printer took a standard dummy text.
                     </p>
-                    <ul class="d-flex list-unstyled">
-                        <li class="p-2 bg-light border m-1">css</li>
-                        <li class="p-2 bg-light border m-1">html</li>
-                        <li class="p-2 bg-light border m-1">bootstrap</li>
-                        <li class="p-2 bg-light border m-1">Ruby</li>
+                    <ul class="d-flex list-unstyled gap-3">
+                        <li class="p-2 bg-light border p-3">css</li>
+                        <li class="p-2 bg-light border p-3">html</li>
+                        <li class="p-2 bg-light border p-3">bootstrap</li>
+                        <li class="p-2 bg-light border p-3">Ruby</li>
                     </ul>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/Project.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+            <div class="row mt-5 justify-content-center gap-5">
+                <div class="col-lg-3 card" style="background-image: url('img/Project.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body d-flex flex-lg-column">
                         <h5 class="card-title"></h5>
                         <p class="card-text">
                             
                         </p>
-                        <a href="#!" class="btn btn-outline-primary btn-lg d-md-block mt-auto">See Project</a>
+                        <a href="#!" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">See Project</a>
                     </div>
                 </div>
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/Data.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+                <div class="col-lg-4 card" style="background-image: url('img/Data.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body">
                         <h5 class="card-title">Data Dashboard Healthcare</h5>
                         <p class="card-text">
@@ -115,7 +119,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/website2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+                <div class="col-lg-3 card" style="background-image: url('img/website2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body">
                         <h5 class="card-title mt-auto">Website Protfolio </h5>
                         <p class="card-text">
@@ -128,7 +132,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/project2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+                <div class="col-lg-4 card" style="background-image: url('img/project2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body">
                         <h5 class="card-title mt-auto">Profesional Art Printing Data More</h5>
                         <p class="card-text">
@@ -141,7 +145,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/data2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+                <div class="col-lg-4 card" style="background-image: url('img/data2.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body">
                         <h5 class="card-title">Data Dashboard Healthcare</h5>
                         <p class="card-text">
@@ -154,7 +158,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 card me-4 mb-4" style="background-image: url('img/Website.png'); width: 336px; height:435px; background-repeat: no-repeat;">
+                <div class="col-lg-4 card" style="background-image: url('img/Website.png'); width: 336px; height:435px; background-repeat: no-repeat;">
                     <div class="card-body">
                         <h5 class="card-title">Website Protfolio </h5>
                         <p class="card-text">
@@ -170,31 +174,130 @@
             </div>
         </div>
     </section>
-    <section id="About">
-        <div class="container-fill bg-dark ">
-            <div class="container-lg d-flex bg-dark">
-                <div class="container">
-                    <h1 class="title text-warning mt-5 fw-bold">About me</h1>
-                    <p class="text text-light mt-5">
-                        Hello I’m a software developer! I can help you build a product , 
-                        feature or website Look through some of my work and experience! 
-                        If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                    </p>
-                    <button class="btn btn-warning mt-3 text-light">Get My Resume</button>
-                </div>
-                <div class="container">
-                    <img class="img-fluid float-end p-0" src="img/about-me.png" width="672px" height="352px" alt="About-us-image">
-                </div>
+    <section id="About" class="bg-dark">
+        <div class="container-fluid d-lg-flex">
+            <div class="container-fluid mt-5 p-5 ms-5">
+                <h1 class="title text-warning fw-bold">About me</h1>
+                <p class="text text-light mt-3">
+                    Hello I’m a software developer! I can help you build a product , 
+                    feature or website Look through some of my work and experience! 
+                    If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                </p>
+                <button class="btn btn-warning mt-3 text-light">Get My Resume</button>
             </div>
-            <div class="container-lg bg-dark">
-                <hr>
+            <div class="container-fluid position-relative">
+                <img class="img-fluid mt-5 end-1" src="img/about-me.png" width="672px" height="352px" alt="About-us-image">
             </div>
         </div>
-        
-        
-
-        
+        <div class="container p-lg-5 mt-5">
+            <hr style="color: #fff;">
+        </div>
+        <div class="container p-lg-5 mb-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-4 ">
+                    <ul class="text-light list-unstyled">
+                        <h1 class="mb-3">Lanaguage</h1>
+                        <li class="mb-3">Javascript</li>
+                        <li class="mb-3">Ruby</li>
+                        <li class="mb-3">Html</li>
+                        <li class="mb-3">Css</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="text-light list-unstyled ">
+                        <h1 class="mb-3">Lanaguage</h1>
+                        <li class="mb-3">Javascript</li>
+                        <li class="mb-3">Ruby</li>
+                        <li class="mb-3">Html</li>
+                        <li class="mb-3">Css</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="text-light list-unstyled ">
+                        <h1 class="mb-3">Lanaguage</h1>
+                        <li class="mb-3">Javascript</li>
+                        <li class="mb-3">Ruby</li>
+                        <li class="mb-3">Html</li>
+                        <li class="mb-3">Css</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
     </section>
+    <section id="Contact">
+        <div class="container d-lg-flex mt-5">
+            <div class="container">
+                <h1>I'm always interested 
+                    in hearing about new projects, so if you'd 
+                    like to chat please 
+                    get in touch.</h1>
+            </div>
+            <div class="container d-flex-column">
+                <form class="row g-3" action="https://formspree.io/f/meqdgvvo" method="post" id="contact-form">
+                    <div class="mb-3">
+                        <input class="form-control input-lg" type="text" placeholder="Full name" name="name" maxlength="30" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control input-lg" type="email" placeholder="Email address" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control input-lg resize-no-resize" name="message" id="msg" rows="10" placeholder="Enter text here" maxlength="500" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="submit">Get in touch</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <ul class="navbar list-unstyled justify-content-center gap-3">
+            <li class="nav-item">
+                <a href="#"><img src="img/dark-github.png" alt="github"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img src="img/dlinkdin.png" alt="linkedin"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img src="img/dangelist.png" alt="angelist"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img src="img/d-twitter.png" alt="twitter"></a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><img src="img/dark-m.png" alt="medium"></a>
+            </li>
+        </ul>
+    </footer>
+    <div class="modal fade container-fluid" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-title">Keeping track of hundreds  of components website</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <ul class="d-flex list-unstyled">
+                <li class="p-2 bg-light border m-1">html</li>
+                <li class="p-2 bg-light border m-1">bootstrap</li>
+                <li class="p-2 bg-light border m-1">Ruby</li>
+            </ul>
+            <div class="modal-body row">
+                <div class="col-7">
+                    <img class="img-fluid" src="img/Snapshoot Portfolio.png" alt="Modal-img">
+                </div>
+                <div class="col-5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem laboriosam nihil
+                         minus voluptatibus harum aliquam consequatur pariatur 
+                        inventore dignissimos illum excepturi ratione ipsum sit iusto alias eligendi fugit laborum?</p>
+                    
+                    <button class="btn btn-danger">See Live</button>
+                    <button class="btn btn-danger">See Source</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
