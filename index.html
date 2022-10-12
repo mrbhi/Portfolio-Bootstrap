@@ -40,7 +40,7 @@
         <div class="container-fluid bg-info">
             <div class="row">
                 <div class="col-lg-6 d-lg-flex align-items-center">
-                    <div class="col-lg-2 ms-4 d-sm-none d-lg-block">
+                    <div class="col-lg-2 ms-4 d-lg-block d-none d-md-none">
                         <ul class="nav flex-column gap-3">
                             <li class="nav-item">
                                 <a href="#"><img src="img/GitHub.png" alt="github"></a>
@@ -66,7 +66,7 @@
                         <small>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                             don’t hestiate to contact me.</small>
                     </div>
-                    <div class="col-lg-2 ms-4 d-lg-none mt-5">
+                    <div class="col-lg-2 ms-4 d-sm-block d-lg-none mt-5">
                         <ul class="nav d-flex gap-3">
                             <li class="nav-item">
                                 <a href="#"><img src="img/GitHub.png" alt="github"></a>
@@ -86,20 +86,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid float-end d-lg-none d-sm-block" src="img/Bg.png" alt="headline-mobile-image">
-                    <img class="img-fluid float-end mb-5 d-sm-none d-lg-block" src="img/ds-bg.png"  alt="headline image" width="450px">
+                <div class="col-lg-6 p-0">
+                    <img class="img-fluid float-end d-sm-block d-lg-none" src="img/Bg.png" alt="headline-mobile-image">
+                    <img class="img-fluid float-end mb-5 d-none d-lg-block" src="img/ds-bg.png"  alt="headline image" width="450px">
                 </div>
             </div>
         </div>
     </section>
-    <section id="About">
+    <section id="Work">
         <div class="container mb-5 mt-5">
-            <div class="d-lg-flex justify-content-center"> 
-                <h1>My Recent Works </h1>
-                <hr>
+            <div class="d-lg-flex justify-content-center align-items-center"> 
+                <h1 class="text-center">My Recent Works</h1>
+                <hr class="mb-5">
             </div>
-            <div class="d-lg-flex justify-content-center">
+            <div class="d-lg-flex justify-content-center mt-5">
                 <img src="img/FeatureImage.png" alt="featured-image" width="100%" class="img-fluid">
                 <div class="container">
                     <h1 class="title">Multi-Post Stories</h1>
@@ -123,7 +123,7 @@
                         <p class="card-text">
                             
                         </p>
-                        <a href="#!" class="btn mx-auto float-end" data-bs-toggle="modal" data-bs-target="#reg-modal">See Project</a>
+                        <a href="#"><button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#reg-modal">See Project</button></a>
                     </div>
                 </div>
                 <div class="col-lg-4 card" style="background-image: url('img/Data.png'); width: 336px; height:435px; background-repeat: no-repeat;">
@@ -195,28 +195,31 @@
         </div>
     </section>
     <section id="About" class="bg-dark">
-        <div class="container-fluid d-lg-flex">
-            <div class="container-fluid mt-5 p-5 ms-5">
-                <h1 class="title text-warning fw-bold">About me</h1>
-                <p class="text text-light mt-3">
-                    Hello I’m a software developer! I can help you build a product , 
-                    feature or website Look through some of my work and experience! 
-                    If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-                <button class="btn btn-warning mt-3 text-light">Get My Resume</button>
-            </div>
-            <div class="container-fluid position-relative">
-                <img class="img-fluid mt-5 end-1" src="img/about-me.png" width="672px" height="352px" alt="About-us-image">
+        <div class="container-fluid d-lg-flex p-0">
+            <div class="row">
+                <div class="col-lg-6 container-fluid mt-5 p-5">
+                    <h1 class="title text-warning fw-bold">About me</h1>
+                    <p class="text text-light mt-3">
+                        Hello I’m a software developer! I can help you build a product , 
+                        feature or website Look through some of my work and experience! 
+                        If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    <button class="btn btn-warning mt-3 text-light">Get My Resume</button>
+                </div>
+                <div class="col-lg-6 container-fluid p-0">
+                    <img class="img-fluid float-end d-sm-block d-lg-none mt-5" src="img/About-us.png" alt="About-us-image">
+                    <img class="img-fluid float-end mb-5 d-none d-lg-block mt-5" src="img/about-me.png" alt="About-us-image">
+                </div>
             </div>
         </div>
-        <div class="container p-lg-5 mt-5">
+        <div class="container mt-5">
             <hr style="color: #fff;">
         </div>
         <div class="container p-lg-5 mb-5">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-4 ">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4">
+                    <h1 class="text-light mb-3">Lanaguage</h1>
                     <ul class="text-light list-unstyled">
-                        <h1 class="mb-3">Lanaguage</h1>
                         <li class="mb-3">Javascript</li>
                         <li class="mb-3">Ruby</li>
                         <li class="mb-3">Html</li>
